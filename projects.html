@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('projects', filename='css/main.css') }}"
+    />
+    <style>
+      /* SOME EDITS TO THE NAVBAR */
+      .navbar-nav .nav-link {
+        margin-right: 15px;
+        margin-top: 20px;
+        font-size: larger;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      /*THE BACKGROUND OF THE PAGE */
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      body {
+        background: linear-gradient(270deg, #180333, #111010, #1b1d3d);
+        background-size: 600% 600%;
+        animation: gradient 20s ease infinite;
+      }
+      .card {
+        margin-top: 50px;
+        margin-left: 85px;
+        text-align: center;
+        width: 18rem;
+      }
+    </style>
+
+    <title>My Website</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul style="margin-right: 70px" class="navbar-nav , ms-auto">
+            <li class="nav-item">
+              <a
+                style="color: aliceblue"
+                class="nav-link active"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                style="color: aliceblue"
+                class="nav-link active"
+                id="projects-btn"
+                href="projects.html"
+                >PROJECTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                style="color: aliceblue"
+                class="nav-link active"
+                id="contact-btn"
+                href="contact.html"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="card">
+      <img
+        src="https://t3.ftcdn.net/jpg/02/52/12/40/360_F_252124067_aCtp9ZD934RboKmjJzkXiwYDL7XkNjpn.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Food recipes platform</h5>
+        <p class="card-text">
+          Developed a web application to store and manage recipes. Tech stack:
+          Python SQLite, APIs, Docker, Github, Flask , JS
+        </p>
+        <a
+          href="https://github.com/BedoKharboutli/recipe-platform"
+          class="btn btn-primary"
+          >See Project</a
+        >
+      </div>
+    </div>
+    <div
+      class="card"
+      style="margin-left: 500px; margin-top: -401px; margin-bottom: 1px"
+    >
+      <img
+        src="https://i.ytimg.com/vi/ofEfimSRpX0/maxresdefault.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Snake game</h5>
+        <p class="card-text">
+          This is a simple snake game implemented in JavaScript & HTML/CSS.
+          Snake movement based on user input. <br />
+          Have fun with the game!!!
+        </p>
+        <a
+          href="https://bedokharboutli.github.io/snakegame-JS/"
+          class="btn btn-primary"
+          >Play Game</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
