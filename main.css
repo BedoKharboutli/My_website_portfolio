@@ -1,3 +1,106 @@
 body {
-  background-color: brown;
+  background: linear-gradient(270deg, #180333, #111010, #1b1d3d);
+  background-size: 600% 600%;
+  animation: gradient 20s ease infinite;
+}
+/* THE WELCOMING MASSAGE ON THE MAIN PAGE  */
+.hi_msg {
+  text-align: center;
+  color: #ced0db;
+  margin-top: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.repre_msg {
+  text-align: center;
+  color: #ced0db;
+  margin-top: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.typewriter {
+  overflow: hidden;
+  font-size: xx-large;
+  border-right: 0.15em solid rgb(15, 4, 39); /* The cursor */
+  white-space: nowrap; /* Keeps the text on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  margin-top: 90px;
+  padding: 5px;
+  animation: typing 4.5s steps(30, end), blink-caret 0.55s step-end infinite;
+}
+/*___________________________________________________________________________*/
+
+/*THE BACKGROUND OF THE PAGE */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 2;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(21, 6, 49);
+  }
+}
+/*___________________________________________________________________________*/
+
+/* SOME EDITS TO THE NAVBAR */
+.navbar-nav .nav-link {
+  margin-right: 15px;
+  margin-top: 20px;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.card {
+  margin-top: 50px;
+  margin-left: 85px;
+  text-align: center;
+  width: 18rem;
+}
+
+.social-icon {
+  color: #fffdfd; /* Default color for icons */
+  font-size: 3em; /* Adjust the size of the icons */
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #0073b1; /* Color change on hover (e.g., LinkedIn blue) */
+  padding-top: 5px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Adjust the space between icons */
+  margin-top: 20px;
+}
+/*contact me text*/
+.contact {
+  text-align: center;
+  font-size: xx-large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 150px;
 }
