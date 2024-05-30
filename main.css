@@ -65,13 +65,18 @@ body {
 /*___________________________________________________________________________*/
 
 /* SOME EDITS TO THE NAVBAR */
-.navbar-nav .nav-link {
-  margin-right: 15px;
-  margin-top: 20px;
-  font-size: larger;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.justify-content-end {
+  font-size: large;
+  margin-top: 22px;
+  margin-right: 40px;
 }
 
+.nav-link {
+  color: #ced0db;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SOME EDITS TO PROJECTS-Cards */
 .card {
   margin-top: 50px;
   margin-left: 85px;
@@ -93,7 +98,7 @@ body {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 50px; /* Adjust the space between icons */
+  gap: 30px; /* Adjust the space between icons */
   margin-top: 20px;
 }
 /*contact me text*/
