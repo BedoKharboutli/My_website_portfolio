@@ -148,6 +148,34 @@ body {
   text-align: center;
   width: 18rem;
 }
+/* Ensure cards don't get too big on small screens */
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card-img-top {
+    height: auto;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
 
 .social-icon {
   color: #fffdfd; /* Default color for icons */
