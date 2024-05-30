@@ -41,12 +41,6 @@ body {
     margin-right: 20px;
   }
 
-  .hi_msg,
-  .repre_msg {
-    font-size: medium;
-    margin-top: 10px;
-  }
-
   .card {
     margin: 20px auto;
     width: 90%;
@@ -71,8 +65,8 @@ body {
 
   .hi_msg,
   .repre_msg {
-    font-size: small;
-    margin-top: 5px;
+    font-size: medium;
+    margin-top: 70px;
   }
 
   .justify-content-end {
