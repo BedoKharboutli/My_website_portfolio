@@ -22,7 +22,7 @@ body {
   border-right: 0.15em solid rgb(15, 4, 39);
   white-space: nowrap;
   margin: 0 auto;
-  letter-spacing: 0.1em;
+  letter-spacing: 0em;
   margin-top: 90px;
   padding: 5px;
   animation: typing 4.5s steps(30, end), blink-caret 0.55s step-end infinite;
@@ -147,6 +147,7 @@ body {
   .card {
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 1px;
   }
 
   .card-img-top {
@@ -155,6 +156,7 @@ body {
 
   .card-body {
     padding: 15px;
+    position: static;
   }
 
   .card-title {
